@@ -8,6 +8,4 @@ const {getAlltasks, createTask,getTask,updateTask,deleteTask}=require('../contro
 router.route('/').get(getAlltasks).post(createTask)
 router.route('/:id').get(getTask).patch(updateTask).delete(deleteTask)
 
-
-
 module.exports=router
